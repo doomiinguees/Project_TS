@@ -23,6 +23,7 @@ namespace ChatCliente
         {
             InitializeComponent();
             InitializeComponent();
+            gbHome.Visible = true;
             IPEndPoint endPoint = new IPEndPoint(IPAddress.Loopback, PORT);
             tcpClient = new TcpClient();
             tcpClient.Connect(endPoint);
@@ -92,6 +93,8 @@ namespace ChatCliente
             {
                 networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
             }
+
+            lbChat.Items.Add(msg);
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

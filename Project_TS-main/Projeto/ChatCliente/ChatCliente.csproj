@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ProtocolSI">
+      <HintPath>..\..\..\..\..\..\Ambiente de Trabalho\IPLeiria\segundo_semestre\Tópicos_de_Segurança\Prático_Laboral\Ficha3\ProtocolSI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

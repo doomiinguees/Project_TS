@@ -74,7 +74,16 @@ namespace ChatServer
                 //ciclo a ser executado ate ao fim da transmissao
                 while (protocolSI.GetCmdType() != ProtocolSICmdType.EOT)
                 {
+                try
+                {
                     int bytesRead = networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
+                }
+                catch (Exception)
+                {
+                    return;
+                    throw;
+                }
+                    
                     byte[] ack;
 
                     //"alteraçao"/mudança entre a apresentaçao da mensagem e o fim da transmissao

@@ -402,12 +402,13 @@
             this.gbHome.Size = new System.Drawing.Size(345, 165);
             this.gbHome.TabIndex = 8;
             this.gbHome.TabStop = false;
+            this.gbHome.Visible = false;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(76, 38);
+            this.label18.Location = new System.Drawing.Point(88, 44);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(197, 20);
             this.label18.TabIndex = 8;
@@ -417,7 +418,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(76, 18);
+            this.label17.Location = new System.Drawing.Point(88, 18);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(197, 20);
             this.label17.TabIndex = 7;
