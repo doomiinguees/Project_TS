@@ -2,21 +2,36 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using EI.SI;
 using System.Drawing;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace ChatCliente
 {
     public partial class Form1 : Form
     {
+        private const int PORT = 50001;
+        NetworkStream networkStream;
+        ProtocolSI protocolSI;
+        TcpClient tcpClient;
         public Form1()
         {
             InitializeComponent();
-        }
+            InitializeComponent();
+            gbHome.Visible = true;
+            IPEndPoint endPoint = new IPEndPoint(IPAddress.Loopback, PORT);
+            tcpClient = new TcpClient();
+            tcpClient.Connect(endPoint);
+            networkStream = tcpClient.GetStream();
+            protocolSI = new ProtocolSI();
 
+        }
+       
         private void btnHomeRegistar_Click(object sender, EventArgs e)
         {
             gbHome.Visible = false;
@@ -69,11 +84,17 @@ namespace ChatCliente
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            //Enviar Mensagem
-            string message = txtMessage.Text;
-
-            lbChat.Items.Add(message);
+            string msg = txtMessage.Text;
             txtMessage.Clear();
+            byte[] packet = protocolSI.Make(ProtocolSICmdType.DATA, msg);
+            //cria uma mensagem/pacote de um tipo específico
+            networkStream.Write(packet, 0, packet.Length);
+            while (protocolSI.GetCmdType() != ProtocolSICmdType.ACK)
+            {
+                networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
+            }
+
+            lbChat.Items.Add(msg);
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -104,6 +125,15 @@ namespace ChatCliente
             {
                 return;
             }
+            ClosecClient();
+        }
+        private void ClosecClient()
+        {
+            byte[] eot = protocolSI.Make(ProtocolSICmdType.EOT);
+            networkStream.Write(eot, 0, eot.Length);
+            networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
+            networkStream.Close();
+            tcpClient.Close();
         }
     }
 }
