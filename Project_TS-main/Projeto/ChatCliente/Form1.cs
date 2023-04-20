@@ -15,7 +15,7 @@ namespace ChatCliente
 {
     public partial class Form1 : Form
     {
-        private const int PORT = 10000;
+        private const int PORT = 50001;
         NetworkStream networkStream;
         ProtocolSI protocolSI;
         TcpClient tcpClient;
