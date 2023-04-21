@@ -1,0 +1,36 @@
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.Form1.resources
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\TS\Projeto\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.Form1.resources
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\bin\Debug\ProtocolSI.dll
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Project_TS-main\Projeto\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.Form1.resources
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.pdb
