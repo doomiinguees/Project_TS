@@ -13,7 +13,7 @@ namespace ChatServer
     {
        
             //criar novamente uma constante tal como feito do lado do cliente
-            private const int PORT = 10000;
+            private const int PORT = 50001;
 
             static void Main(string[] args)
             {
