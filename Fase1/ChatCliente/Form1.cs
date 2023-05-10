@@ -71,15 +71,39 @@ namespace ChatCliente
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //Login cliente já existente
+            string userhard = "David";
+            string passhard = "D@fonso2003";
             string user = txtLUser.Text;
             string pass = txtLPass.Text;
-            gbLogin.Visible = false;
+
+            try
+            {
+                if (user == userhard)
+                {
+                    if (pass == passhard)
+                    {
+                        gbLogin.Visible = false;
+                        gbChat.Visible = true;
+                        lblUsername.Text = user;
+                        lblLastAccess.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        gbUserInfo.Visible = true;
+                    }
+                    
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nome de Utilizador ou Palavra-passe Incorretos");
+                return;
+            }
 
 
-            gbChat.Visible = true;
-            lblUsername.Text = user;
-            lblLastAccess.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            gbUserInfo.Visible = true;
+
+            
         }
 
         private void btnSend_Click(object sender, EventArgs e)
