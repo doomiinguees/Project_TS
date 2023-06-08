@@ -17,12 +17,21 @@ C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatServer\obj\Debug\
 C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
 C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatServer\obj\Debug\ChatServer.exe
 C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatServer\obj\Debug\ChatServer.pdb
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\bin\Debug\ChatServer.exe.config
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\bin\Debug\ChatServer.exe
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\bin\Debug\ChatServer.pdb
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\obj\Debug\ChatServer.csproj.AssemblyReference.cache
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\obj\Debug\ChatServer.csproj.SuggestedBindingRedirects.cache
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\obj\Debug\ChatServer.exe
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\obj\Debug\ChatServer.pdb
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\obj\Debug\ChatServer.csproj.AssemblyReference.cache
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\obj\Debug\ChatServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatServer\obj\Debug\ChatServer.pdb
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.csproj.AssemblyReference.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.pdb

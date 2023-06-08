@@ -34,15 +34,41 @@ C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatC
 C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
 C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.exe
 C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\ChatCliente\obj\Debug\ChatCliente.pdb
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\bin\Debug\ChatCliente.exe.config
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\bin\Debug\ChatCliente.exe
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\bin\Debug\ChatCliente.pdb
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.Form1.resources
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.exe
-C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.Form1.resources
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase1\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.Form1.resources
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\dadom\Downloads\Project_TS-main (1)\Project_TS-main\Fase1\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\bin\Debug\Database1.mdf
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\bin\Debug\Database1_log.ldf
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.Form1.resources
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.pdb

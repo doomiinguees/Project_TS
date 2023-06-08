@@ -90,7 +90,7 @@ namespace ChatServer
                     switch (protocolSI.GetCmdType())
                     {
                         case ProtocolSICmdType.DATA:
-                            Console.WriteLine("Client " + clientID + ": " + protocolSI.GetStringFromData());
+                            Console.WriteLine("Client " + clientID + " sent a message.");
                             ack = protocolSI.Make(ProtocolSICmdType.ACK);
                             networkStream.Write(ack, 0, ack.Length);
                             break;
