@@ -13,6 +13,10 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Data.SqlClient;
 using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.LinkLabel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Security.Policy;
+using System.IO;
 
 namespace ChatCliente
 {
@@ -79,7 +83,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True")
                 };
 
                 // Abrir ligação à Base de Dados
@@ -139,47 +143,21 @@ namespace ChatCliente
             String username = txtLUser.Text;
 
             //Verificar
-            if (VerifyLogin( username,pass))
+            if (VerifyLogin( username,password))
             {
-                MessageBox.Show("Utilizador válido!");
+                gbLogin.Visible = false;
+                gbChat.Visible = true;
+                lblUsername.Text = username;
+                lblLastAccess.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                gbUserInfo.Visible = true;
+               
             }
             else
             {
                 MessageBox.Show("Utilizador inválido!");
             }
 
-
-            /*
-            try
-            {
-                if (user == userhard)
-                {
-                    if (pass == passhard)
-                    {
-                        gbLogin.Visible = false;
-                        gbChat.Visible = true;
-                        lblUsername.Text = user;
-                        lblLastAccess.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                        gbUserInfo.Visible = true;
-                    }
-                    
-                }
-                else
-                {
-                    throw new Exception();
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Nome de Utilizador ou Palavra-passe Incorretos");
-                return;
-            }
-            */
-
-
-
         }
-
 
         private bool VerifyLogin(string username, string password)
         {
@@ -188,13 +166,13 @@ namespace ChatCliente
             {
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection();
-                conn.ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\nunosimoes\Documents\2022_2023_TopSegurança\Nocturno\Ficha8\FichaPratica8\FichaPratica8_Base\Database.mdf';Integrated Security=True");
+                conn.ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True");
 
                 // Abrir ligação à Base de Dados
                 conn.Open();
 
                 // Declaração do comando SQL
-                String sql = "SELECT * FROM Users WHERE Username = @username";
+                String sql = "SELECT * FROM Utilizadores WHERE Username = @username";
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = sql;
 
@@ -227,9 +205,16 @@ namespace ChatCliente
                 conn.Close();
 
                 byte[] hash = GenerateSaltedHash(password, saltStored);
+                string confirmar = hash.ToString();
+               
+                VerificarSALTEDHASH(confirmar);
+            
                 return saltedPasswordHashStored.SequenceEqual(hash);
-                //TODO: verificar se a password na base de dados 
-                throw new NotImplementedException();
+           
+              
+
+             
+
             }
             catch (Exception e)
             {
@@ -238,28 +223,71 @@ namespace ChatCliente
             }
         }
 
-        private void buttonGenerateSaltedHash_Click(object sender, EventArgs e)
+
+        private void VerificarSALTEDHASH(string hash)
         {
-            String password = txtLPass.Text;
+            SqlConnection conn = null;
+            try
+            {
+                // Configurar ligação à Base de Dados
+                conn = new SqlConnection
+                {
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True")
+                };
+                // Abrir ligação à Base de Dados
+                conn.Open();
 
-            byte[] salt = GenerateSalt(SALTSIZE);
-            byte[] hash = GenerateSaltedHash(password, salt);
+                // Declaração do comando SQL
 
-            textBoxSaltedHash.Text = Convert.ToBase64String(hash);
-            textBoxSalt.Text = Convert.ToBase64String(salt);
+                string confirmar = hash;
 
-            textBoxSizePass.Text = (hash.Length * 8).ToString();
-            textBoxSizeSalt.Text = (salt.Length * 8).ToString();
+
+                      String sql = "SELECT * FROM Utilizadores WHERE SaltedPasswordHash = @confirmar";
+                       SqlCommand cmd = new SqlCommand();
+                       cmd.CommandText = sql;
+
+                // Declaração dos parâmetros do comando SQL
+                SqlParameter param = new SqlParameter("@confirmar", confirmar);
+
+                // Introduzir valor ao parâmentro registado no comando SQL
+                cmd.Parameters.Add(param);
+
+                // Associar ligação à Base de Dados ao comando a ser executado
+                cmd.Connection = conn;
+
+                // Executar comando SQL
+                SqlDataReader reader = cmd.ExecuteReader();
+
+
+                // Executar comando SQL
+                int lines = cmd.ExecuteNonQuery();
+
+                if (lines == 0)
+                {
+                    // Se forem devolvidas 0 linhas alteradas então o não foi executado com sucesso
+                    throw new Exception("PASSE ERRADA");
+                }
+                return ;
+            }
+            catch
+            {
+               
+
+            }
         }
 
 
-
+       
 
         private void btnSend_Click(object sender, EventArgs e)
         {
             string msg = txtMessage.Text;
+            byte[] salt = GenerateSalt(SALTSIZE);
+            byte[] hash = GenerateSaltedHash(msg, salt);
             txtMessage.Clear();
-            byte[] packet = protocolSI.Make(ProtocolSICmdType.DATA, msg);
+            guardarmensagem(hash);
+
+            byte[] packet = protocolSI.Make(ProtocolSICmdType.DATA, hash);
             //cria uma mensagem/pacote de um tipo específico
             networkStream.Write(packet, 0, packet.Length);
             while (protocolSI.GetCmdType() != ProtocolSICmdType.ACK)
@@ -267,7 +295,127 @@ namespace ChatCliente
                 networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
             }
 
+           /* string username = IdentifierClient();
+            byte[] msghash = buscarsalt(username,hash);
+
+            byte[] hash1 = GenerateSaltedHash(Convert.ToBase64String(hash), msghash);
+
+            string chave = Convert.ToBase64String(msghash);
+            string texto = Convert.ToBase64String(hash1);
+          // string enviar = Descriptografar(texto, chave); */
             lbChat.Items.Add(msg);
+        }
+
+       
+    
+
+         private string IdentifierClient()
+        {
+            string idcliente;
+
+          
+            if (txtRUser.Text != null)
+            {
+                idcliente = txtRUser.Text;
+            }
+            else
+                {
+                    idcliente = txtLUser.Text;
+                }
+                return idcliente;
+        }
+
+        private byte[] buscarsalt(string username, byte[] hash)
+        {
+            using (SqlConnection conn = new SqlConnection())
+            {
+                // Configurar a conexão com o banco de dados
+                conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True";
+
+                // Abrir conexão com o banco de dados
+                conn.Open();
+
+                // Declaração do comando SQL
+                string sql = "SELECT Salt FROM Utilizadores WHERE UltimaMSG = @hash AND Username = @username";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                // Declaração dos parâmetros do comando SQL
+                SqlParameter paramHash = new SqlParameter("@hash", hash);
+                SqlParameter paramUsername = new SqlParameter("@username", username);
+
+                // Adicionar parâmetros ao comando SQL
+                cmd.Parameters.Add(paramHash);
+                cmd.Parameters.Add(paramUsername);
+
+                // Executar o comando SQL e obter o leitor de dados
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+                        byte[] salt = (byte[])reader["Salt"];
+                        return salt;
+                    }
+                    else
+                    {
+                        // Nenhuma linha encontrada, retornar valor nulo ou lidar com a situação adequadamente
+                        return null;
+                    }
+                }
+            }
+        }
+
+
+        private void guardarmensagem(byte[] hash)
+        {
+
+            string nome = IdentifierClient();
+
+      
+            SqlConnection conn = null;
+            try
+            {
+
+                // Configurar ligação à Base de Dados
+                conn = new SqlConnection
+                {
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True")
+                };
+
+                // Abrir ligação à Base de Dados
+                conn.Open();
+
+                // Declaração dos parâmetros do comando SQL
+                SqlParameter paramMensagem = new SqlParameter("@ultimamsg", hash);
+                SqlParameter paramNome = new SqlParameter("@user", nome);
+
+                // Declaração do comando SQL
+                string sqlUpdate = "UPDATE Utilizadores SET ULTIMAMSG = @ultimamsg WHERE Username = @user";
+            
+                // Preparar comando SQL para ser executado na Base de Dados
+                SqlCommand cmdUpdate = new SqlCommand(sqlUpdate, conn);
+
+                // Introduzir valores aos parâmetros registrados no comando SQL
+                cmdUpdate.Parameters.Add(paramMensagem);
+                cmdUpdate.Parameters.Add(paramNome);
+
+                // Executar comando SQL
+                int lines = cmdUpdate.ExecuteNonQuery();
+
+                // Fechar ligação
+                conn.Close();
+                if (lines == 0)
+                {
+                    // Se forem devolvidas 0 linhas alteradas então o não foi executado com sucesso
+                    throw new Exception("Error while inserting an user");
+                }
+            }catch (Exception ex)
+            {
+
+               MessageBox.Show("ERRO");
+            }
+
+
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -308,5 +456,40 @@ namespace ChatCliente
             networkStream.Close();
             tcpClient.Close();
         }
+
+
+
+
+
+
+            public class LogSistema
+            {
+        private string nomeArquivo;
+
+        public LogSistema(string nomeArquivo)
+        {
+            this.nomeArquivo = nomeArquivo;
+        }
+
+        public void RegistrarLog(string mensagem)
+        {
+            string dataHora = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            string log = $"{dataHora} - {mensagem}";
+
+            using (StreamWriter writer = File.AppendText(nomeArquivo))
+            {
+                writer.WriteLine(log);
+            }
+        }
     }
+
+
+
+
+
+
+
+
+
+}
 }

@@ -72,3 +72,17 @@ C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCli
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.exe
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.AssemblyReference.cache
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.Form1.resources
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.Properties.Resources.resources
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.GenerateResource.cache
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.exe
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.pdb
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\bin\Debug\Database1.mdf
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\bin\Debug\Database1_log.ldf
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\bin\Debug\ChatCliente.exe.config
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\bin\Debug\ChatCliente.exe
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\bin\Debug\ChatCliente.pdb
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\obj\Debug\ChatCliente.csproj.CopyComplete

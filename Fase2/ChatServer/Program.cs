@@ -1,6 +1,8 @@
 ﻿using EI.SI;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -90,6 +92,8 @@ namespace ChatServer
                     switch (protocolSI.GetCmdType())
                     {
                         case ProtocolSICmdType.DATA:
+                        Logg.WriteLog(clientID.ToString(), "Client " + clientID + " sent a message.");
+
                             Console.WriteLine("Client " + clientID + " sent a message.");
                             ack = protocolSI.Make(ProtocolSICmdType.ACK);
                             networkStream.Write(ack, 0, ack.Length);
@@ -100,13 +104,19 @@ namespace ChatServer
                             ack = protocolSI.Make(ProtocolSICmdType.ACK);
                             networkStream.Write(ack, 0, ack.Length);
                             break;
-
+                       
                     }
                 }
-
                 //fecho do networkStream e do cliente (TcpClient)
                 networkStream.Close();
                 client.Close();
-            }
-        }
+            } 
     }
+
+          
+        }
+
+
+
+
+

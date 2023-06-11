@@ -35,3 +35,12 @@ C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServ
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.exe
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\teste\ChatServer\obj\Debug\ChatServer.pdb
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.AssemblyReference.cache
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.pdb
