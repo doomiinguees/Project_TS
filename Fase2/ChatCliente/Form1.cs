@@ -76,14 +76,14 @@ namespace ChatCliente
         }
         private void Register(string username, byte[] saltedPasswordHash, byte[] salt)
         {
-          
+
             SqlConnection conn = null;
             try
             {
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
 
                 // Abrir ligação à Base de Dados
@@ -166,7 +166,7 @@ namespace ChatCliente
             {
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection();
-                conn.ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True");
+                conn.ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True");
 
                 // Abrir ligação à Base de Dados
                 conn.Open();
@@ -232,7 +232,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
                 // Abrir ligação à Base de Dados
                 conn.Open();
@@ -300,7 +300,10 @@ namespace ChatCliente
 
             byte[] hash1 = GenerateSaltedHash(Convert.ToBase64String(hash), msghash);
 
-            string chave = Convert.ToBase64String(msghash);
+            string chave = 
+
+
+
             string texto = Convert.ToBase64String(hash1);
           // string enviar = Descriptografar(texto, chave); */
             lbChat.Items.Add(msg);
@@ -330,7 +333,7 @@ namespace ChatCliente
             using (SqlConnection conn = new SqlConnection())
             {
                 // Configurar a conexão com o banco de dados
-                conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True";
+                conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True";
 
                 // Abrir conexão com o banco de dados
                 conn.Open();
@@ -379,7 +382,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Downloads\Project_TS-main (1)\Project_TS-main\Fase2\ChatCliente\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
 
                 // Abrir ligação à Base de Dados
