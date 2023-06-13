@@ -1,0 +1,48 @@
+﻿1Client 1 sent a message.13/06/2023 15:42:10
+1Client 1 sent a message.13/06/2023 15:42:10
+ClientCliente1connected
+1Client 1 sent a message.13/06/2023 15:43:14
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 15:45:15
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 15:46:33
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 15:47:40
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 15:52:52
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 15:53:49
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 15:56:49
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 15:57:44
+Cliente1connected
+
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 16:02:10
+1Client 1 sent a message.13/06/2023 16:02:13
+1Client 1 sent a message.13/06/2023 16:02:15
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 16:02:56
+1Client 1 sent a message.13/06/2023 16:02:58
+Cliente1connected
+
+Cliente1connected
+
+1Client 1 sent a message.13/06/2023 16:03:44
+Cliente2connected
+
+2Client 2 sent a message.13/06/2023 16:04:11
+2Client 2 sent a message.13/06/2023 16:04:19
+2Client 2 sent a message.13/06/2023 16:04:23
+1Client 1 sent a message.13/06/2023 16:04:26
+1Client 1 sent a message.13/06/2023 16:04:27

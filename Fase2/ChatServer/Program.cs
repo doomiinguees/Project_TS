@@ -36,7 +36,7 @@ namespace ChatServer
 
                     //incrementaçao do contador, de forma a que va sempre somadno 1 (+1)
                     clientCounter++;
-
+                      Logg.Connected("Cliente"+clientCounter);
                     //apresentaçao da mensagem indicativa do nº do cliente na linha de comandos
                     Console.WriteLine("Client {0} connected", clientCounter);
 
@@ -67,11 +67,12 @@ namespace ChatServer
 
             }
 
-            private void ThreadHandler()
+        private void ThreadHandler()
             {
                 //definiçao das variaveis networkStream e protocolSI
                 NetworkStream networkStream = this.client.GetStream();
-                ProtocolSI protocolSI = new ProtocolSI();
+         
+            ProtocolSI protocolSI = new ProtocolSI();
 
                 //ciclo a ser executado ate ao fim da transmissao
                 while (protocolSI.GetCmdType() != ProtocolSICmdType.EOT)
@@ -92,9 +93,11 @@ namespace ChatServer
                     switch (protocolSI.GetCmdType())
                     {
                         case ProtocolSICmdType.DATA:
+
+
                         Logg.WriteLog(clientID.ToString(), "Client " + clientID + " sent a message.");
 
-                            Console.WriteLine("Client " + clientID + " sent a message.");
+                            Console.WriteLine("Client " + clientID+  " sent a message.");
                             ack = protocolSI.Make(ProtocolSICmdType.ACK);
                             networkStream.Write(ack, 0, ack.Length);
                             break;

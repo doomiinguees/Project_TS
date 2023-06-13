@@ -24,7 +24,7 @@ namespace ChatCliente
     {
        
         private const int PORT = 50001;
-
+        private const string username1 = null;
         private const int SALTSIZE = 8;
         private const int NUMBER_OF_ITERATIONS = 1000;
 
@@ -57,13 +57,6 @@ namespace ChatCliente
             gbHome.Visible = false;
             gbLogin.Visible = true;
         }
-
-        private void CreateIPS(string user)
-        {
-            //criação tcp ip, port e ligação ao server
-
-        }
-
         private void btnRegistar_Click(object sender, EventArgs e)
         {
             String pass = txtRPass.Text;
@@ -74,6 +67,12 @@ namespace ChatCliente
             gbRegistar.Visible = false;
             gbChat.Visible = true;
         }
+
+
+
+
+
+
         private void Register(string username, byte[] saltedPasswordHash, byte[] salt)
         {
 
@@ -83,7 +82,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
 
                 // Abrir ligação à Base de Dados
@@ -150,6 +149,8 @@ namespace ChatCliente
                 lblUsername.Text = username;
                 lblLastAccess.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 gbUserInfo.Visible = true;
+
+        
                
             }
             else
@@ -166,7 +167,7 @@ namespace ChatCliente
             {
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection();
-                conn.ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True");
+                conn.ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True");
 
                 // Abrir ligação à Base de Dados
                 conn.Open();
@@ -224,6 +225,7 @@ namespace ChatCliente
         }
 
 
+
         private void VerificarSALTEDHASH(string hash)
         {
             SqlConnection conn = null;
@@ -232,7 +234,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
                 // Abrir ligação à Base de Dados
                 conn.Open();
@@ -285,7 +287,7 @@ namespace ChatCliente
             byte[] salt = GenerateSalt(SALTSIZE);
             byte[] hash = GenerateSaltedHash(msg, salt);
             txtMessage.Clear();
-            guardarmensagem(hash);
+            guardarmensagem( hash);
 
             byte[] packet = protocolSI.Make(ProtocolSICmdType.DATA, hash);
             //cria uma mensagem/pacote de um tipo específico
@@ -294,18 +296,6 @@ namespace ChatCliente
             {
                 networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
             }
-
-           /* string username = IdentifierClient();
-            byte[] msghash = buscarsalt(username,hash);
-
-            byte[] hash1 = GenerateSaltedHash(Convert.ToBase64String(hash), msghash);
-
-            string chave = 
-
-
-
-            string texto = Convert.ToBase64String(hash1);
-          // string enviar = Descriptografar(texto, chave); */
             lbChat.Items.Add(msg);
         }
 
@@ -316,16 +306,18 @@ namespace ChatCliente
         {
             string idcliente;
 
-          
-            if (txtRUser.Text != null)
+            if (!string.IsNullOrEmpty(txtRUser.Text))
             {
                 idcliente = txtRUser.Text;
             }
             else
-                {
-                    idcliente = txtLUser.Text;
-                }
-                return idcliente;
+            {
+                idcliente = txtLUser.Text;
+            }
+
+           
+
+            return idcliente;
         }
 
         private byte[] buscarsalt(string username, byte[] hash)
@@ -333,7 +325,7 @@ namespace ChatCliente
             using (SqlConnection conn = new SqlConnection())
             {
                 // Configurar a conexão com o banco de dados
-                conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True";
+                conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True";
 
                 // Abrir conexão com o banco de dados
                 conn.Open();
@@ -371,9 +363,9 @@ namespace ChatCliente
 
         private void guardarmensagem(byte[] hash)
         {
-
+      
             string nome = IdentifierClient();
-
+      
       
             SqlConnection conn = null;
             try
@@ -382,7 +374,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
 
                 // Abrir ligação à Base de Dados
@@ -412,12 +404,12 @@ namespace ChatCliente
                     // Se forem devolvidas 0 linhas alteradas então o não foi executado com sucesso
                     throw new Exception("Error while inserting an user");
                 }
-            }catch (Exception ex)
-            {
-
-               MessageBox.Show("ERRO");
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+ 
 
         }
 
@@ -450,6 +442,7 @@ namespace ChatCliente
                 return;
             }
             ClosecClient();
+
         }
         private void ClosecClient()
         {
@@ -465,26 +458,6 @@ namespace ChatCliente
 
 
 
-            public class LogSistema
-            {
-        private string nomeArquivo;
-
-        public LogSistema(string nomeArquivo)
-        {
-            this.nomeArquivo = nomeArquivo;
-        }
-
-        public void RegistrarLog(string mensagem)
-        {
-            string dataHora = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            string log = $"{dataHora} - {mensagem}";
-
-            using (StreamWriter writer = File.AppendText(nomeArquivo))
-            {
-                writer.WriteLine(log);
-            }
-        }
-    }
 
 
 

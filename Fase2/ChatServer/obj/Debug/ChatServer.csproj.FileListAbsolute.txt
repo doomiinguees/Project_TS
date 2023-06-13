@@ -55,3 +55,14 @@ C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\ob
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.exe
 C:\Users\dadom\OneDrive\Ambiente de Trabalho\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.pdb
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\bin\Debug\Database1.mdf
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\bin\Debug\Database1_log.ldf
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.AssemblyReference.cache
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\obj\Debug\ChatServer.pdb
