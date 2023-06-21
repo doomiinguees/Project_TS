@@ -46,3 +46,19 @@ Cliente2connected
 2Client 2 sent a message.13/06/2023 16:04:23
 1Client 1 sent a message.13/06/2023 16:04:26
 1Client 1 sent a message.13/06/2023 16:04:27
+Cliente1connected
+
+Cliente1connected
+
+Cliente1connected
+
+1Client 1 sent a message.6/13/2023 9:36:47 PM
+1Client 1 sent a message.6/13/2023 9:36:52 PM
+Cliente1connected
+
+Cliente1connected
+
+Cliente2connected
+
+1Client 1 sent a message.6/13/2023 10:09:34 PM
+2Client 2 sent a message.6/13/2023 10:09:41 PM

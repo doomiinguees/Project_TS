@@ -82,7 +82,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
 
                 // Abrir ligação à Base de Dados
