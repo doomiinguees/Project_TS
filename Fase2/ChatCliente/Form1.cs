@@ -17,6 +17,7 @@ using static System.Windows.Forms.LinkLabel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Security.Policy;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ChatCliente
 {
@@ -27,7 +28,7 @@ namespace ChatCliente
         private const string username1 = null;
         private const int SALTSIZE = 8;
         private const int NUMBER_OF_ITERATIONS = 1000;
-
+        private RSACryptoServiceProvider rsa;
         NetworkStream networkStream;
         ProtocolSI protocolSI;
         TcpClient tcpClient;
@@ -52,10 +53,14 @@ namespace ChatCliente
        
         }
 
+    
+
         private void btnHomeLogin_Click(object sender, EventArgs e)
         {
             gbHome.Visible = false;
             gbLogin.Visible = true;
+         
+
         }
         private void btnRegistar_Click(object sender, EventArgs e)
         {
@@ -66,6 +71,7 @@ namespace ChatCliente
             Register(username, hash, salt);
             gbRegistar.Visible = false;
             gbChat.Visible = true;
+         
         }
 
 
@@ -82,7 +88,7 @@ namespace ChatCliente
                 // Configurar ligação à Base de Dados
                 conn = new SqlConnection
                 {
-                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\dadom\OneDrive\Documentos\GitHub\Project_TS\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
+                    ConnectionString = String.Format(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\Hugo\Desktop\Project_TS-main\Fase2\ChatServer\Database1.mdf';Integrated Security=True")
                 };
 
                 // Abrir ligação à Base de Dados
@@ -150,8 +156,6 @@ namespace ChatCliente
                 lblLastAccess.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 gbUserInfo.Visible = true;
 
-        
-               
             }
             else
             {
@@ -160,8 +164,11 @@ namespace ChatCliente
 
         }
 
+      
+
         private bool VerifyLogin(string username, string password)
         {
+         
             SqlConnection conn = null;
             try
             {
@@ -211,10 +218,7 @@ namespace ChatCliente
                 VerificarSALTEDHASH(confirmar);
             
                 return saltedPasswordHashStored.SequenceEqual(hash);
-           
-              
-
-             
+          
 
             }
             catch (Exception e)
@@ -222,6 +226,7 @@ namespace ChatCliente
                 MessageBox.Show("An error occurred: " + e.Message);
                 return false;
             }
+
         }
 
 
@@ -283,11 +288,12 @@ namespace ChatCliente
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            string cliente = IdentifierClient();
             string msg = txtMessage.Text;
             byte[] salt = GenerateSalt(SALTSIZE);
             byte[] hash = GenerateSaltedHash(msg, salt);
             txtMessage.Clear();
-            guardarmensagem( hash);
+            guardarmensagem(hash);
 
             byte[] packet = protocolSI.Make(ProtocolSICmdType.DATA, hash);
             //cria uma mensagem/pacote de um tipo específico
@@ -296,13 +302,19 @@ namespace ChatCliente
             {
                 networkStream.Read(protocolSI.Buffer, 0, protocolSI.Buffer.Length);
             }
-            lbChat.Items.Add(msg);
+            AtualizarTxt(msg);
         }
 
-       
-    
+        private void AtualizarTxt(string mensagem)
+        {
+            string cliente = IdentifierClient();
+            Invoke(new Action(() =>
+            {
+                lbChat.Items.Add(cliente + " : " + mensagem);
+            }));
+        }
 
-         private string IdentifierClient()
+        private string IdentifierClient()
         {
             string idcliente;
 
@@ -320,7 +332,7 @@ namespace ChatCliente
             return idcliente;
         }
 
-        private byte[] buscarsalt(string username, byte[] hash)
+       /* private byte[] buscarsalt(string username, byte[] hash)
         {
             using (SqlConnection conn = new SqlConnection())
             {
@@ -360,7 +372,7 @@ namespace ChatCliente
             }
         }
 
-
+        */
         private void guardarmensagem(byte[] hash)
         {
       

@@ -644,5 +644,6 @@
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnLogOut;
     }
+
 }
 

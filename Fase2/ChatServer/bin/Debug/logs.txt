@@ -48,17 +48,62 @@ Cliente2connected
 1Client 1 sent a message.13/06/2023 16:04:27
 Cliente1connected
 
+1Client 1 sent a message.26/06/2023 16:17:32
+1Client 1 sent a message.26/06/2023 16:17:34
+Cliente1connected
+
+1Client 1 sent a message.26/06/2023 16:18:11
+1Client 1 sent a message.26/06/2023 16:18:13
+1Client 1 sent a message.26/06/2023 16:18:14
 Cliente1connected
 
 Cliente1connected
 
-1Client 1 sent a message.6/13/2023 9:36:47 PM
-1Client 1 sent a message.6/13/2023 9:36:52 PM
 Cliente1connected
 
 Cliente1connected
 
+Cliente1connected
+
+Cliente1connected
+
+Cliente1connected
+
+1Client 1 sent a message.26/06/2023 20:37:53
+1Client 1 sent a message.26/06/2023 20:38:00
+Cliente1connected
+
+1Client 1 sent a message.26/06/2023 20:39:08
+1Client 1 sent a message.26/06/2023 20:39:10
+1Client 1 sent a message.26/06/2023 20:39:12
 Cliente2connected
 
-1Client 1 sent a message.6/13/2023 10:09:34 PM
-2Client 2 sent a message.6/13/2023 10:09:41 PM
+2Client 2 sent a message.26/06/2023 20:39:36
+2Client 2 sent a message.26/06/2023 20:39:42
+1Client 1 sent a message.26/06/2023 20:39:44
+Cliente1connected
+
+1Client 1 sent a message.26/06/2023 20:40:58
+Cliente2connected
+
+2Client 2 sent a message.26/06/2023 20:41:09
+2Client 2 sent a message.26/06/2023 20:41:12
+2Client 2 sent a message.26/06/2023 20:41:15
+2Client 2 sent a message.26/06/2023 20:41:17
+Cliente1connected
+
+1Client 1 sent a message.26/06/2023 20:47:35
+1Client 1 sent a message.26/06/2023 20:47:37
+Cliente2connected
+
+2Client 2 sent a message.26/06/2023 20:47:51
+2Client 2 sent a message.26/06/2023 20:47:52
+Cliente1connected
+
+Cliente1connected
+
+1Client 1 sent a message.26/06/2023 20:55:08
+Cliente2connected
+
+2Client 2 sent a message.26/06/2023 20:55:30
+2Client 2 sent a message.26/06/2023 20:55:32
